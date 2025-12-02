@@ -1,83 +1,13 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nour Jabri - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="nav-title">Nour Jabri</div>
-      <ul>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-      </ul>
-    </nav>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="animate-fade">Hi, I'm <span>Nour Jabri</span></h1>
-        <p class="animate-slide">Flutter Developer | Junior Web Developer  </p>
-        <a href="#projects" class="btn animate-pop">View My Projects</a>
-      </div>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nour Jabri - Portfolio</title>
 
-    <!-- Projects Section --> 
-    <section id="projects" class="projects">
-      <h2 class="section-title">My Projects</h2>
-      <div class="project-grid">
-        <div class="project-card animate-card">
-
-          <h3>Restaurant Management App</h3>
-          <p>A complete restaurant ordering system built with Flutter and intergrate with Firebase.</p>
-          <img scr="assets/projects/Restaurant/1.jpg" alt="Welcome Screen" data-project="restaurant">
-        </div>
-
-        <div class="project-card animate-card">
-          <h3>School Management App</h3>
-          <p>Mobile application for managing school operations and communication.</p>
-        </div>
-
-        <div class="project-card animate-card">
-          <h3>Hadith Memorization App</h3>
-          <p>A Flutter app designed to help users memorize Hadiths interactively.</p>
-        </div>
-      </div>
-    </section>
-  <section id="skills" class="skills">
-    <h2 class="skills-title">Skills</h2>
-    <div class="skills-card">
-  <p> Flutter & Dart</p>
-    <p>State Management</p>
-    <p>Firebase & Subabase</p>
-    <p>Rest APIs</p>
-    </div>
-  
-    
-  </section>
-    <!-- Contact Section -->
-    <section id ="contact"class="contact">
-      <h2 class="section-title">Contact Me</h2>
-      <p>Email: nourjabri19@gmail.com</p>
-    <p>Phone: +963986978937</p>
-      <a href="https://www.linkedin.com/in/nour-jabri-b72042115/" target="_blank">linkedin</a>
-  <a href="https://github.com/nourjabri/flutter-projects" target="_blank"> GitHub</a>
-    
-    </section>
-
-    <script src="script.js"></script>
-  </body>
-  </html>
-
-  /* Basic Reset */
+  <!-- 🔥 Embedded CSS -->
+  <style>
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -91,37 +21,43 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+/* Navbar */
 nav ul li a:hover {
   color: #6a11cb;
 }
- nav ul li a {
-        text-decoration: none;
+
+nav ul li a {
+  text-decoration: none;
   color: #333;
   font-size: 1.1rem;
   font-weight: 600;
   transition: color 0.3s ease;
 }
+
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
-nav{
-        display: flex;
-        justify-content: space-between;
-    unicode-bidi: isolate;
-    align-items: center;
-    padding: 20px 40px;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
-.nav-title{ 
+
+.nav-title {
   font-size: 1.8rem;
   font-weight: 700;
   background: linear-gradient(to bottom right, #6a11cb, #2575fc);
   -webkit-background-clip: text;
   color: transparent;
 }
+
 /* Hero Section */
 .hero {
   height: 80vh;
@@ -175,23 +111,7 @@ nav{
   margin-bottom: 40px;
   color: #e9b61d;
 }
-.skills-title{
-    color: #e9b61d;
-    font-size: 2rem;
-    text-align: center;
-}
 
-.skills-card{
-    display: grid;
-    gap: 15px;
-     color: #2575fc;
-     font-weight: bold;
-    max-width: 500;
-    font-size: 1.5rem;
-    text-align: center;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      padding: 20;
-}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -216,6 +136,26 @@ nav{
 .project-card h3 {
   color: #2575fc;
   margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-title {
+  color: #e9b61d;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.skills-card {
+  display: grid;
+  gap: 15px;
+  color: #2575fc;
+  font-weight: bold;
+  max-width: 500px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 20px;
 }
 
 /* Contact Section */
@@ -270,4 +210,74 @@ nav{
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+  </style>
+</head>
 
+<body>
+
+  <nav>
+    <div class="nav-title">Nour Jabri</div>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="animate-fade">Hi, I'm <span>Nour Jabri</span></h1>
+      <p class="animate-slide">Flutter Developer | Junior Web Developer</p>
+      <a href="#projects" class="btn animate-pop">View My Projects</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card animate-card">
+        <h3>Restaurant Management App</h3>
+        <p>A complete restaurant ordering system built with Flutter and integrated with Firebase.</p>
+        <img src="assets/projects/Restaurant/1.jpg" alt="Restaurant App">
+      </div>
+
+      <div class="project-card animate-card">
+        <h3>School Management App</h3>
+        <p>A mobile application for managing school operations and communication.</p>
+      </div>
+
+      <div class="project-card animate-card">
+        <h3>Hadith Memorization App</h3>
+        <p>A Flutter app designed to help users memorize Hadiths interactively.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2 class="skills-title">Skills</h2>
+    <div class="skills-card">
+      <p>Flutter & Dart</p>
+      <p>State Management</p>
+      <p>Firebase & Supabase</p>
+      <p>REST APIs</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: nourjabri19@gmail.com</p>
+    <p>Phone: +963986978937</p>
+
+    <a href="https://www.linkedin.com/in/nour-jabri-b72042115/" target="_blank">LinkedIn</a> <br>
+    <a href="https://github.com/nourjabri/flutter-projects" target="_blank">GitHub</a>
+  </section>
+
+</body>
+</html>
